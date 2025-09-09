@@ -1,0 +1,765 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Dadaba Foundation — empowering communities across Ghana and Africa through clean water, education, healthcare, climate-smart agriculture, and jobs for youth.">
+  <meta name="author" content="Dadaba Foundation">
+  <title>Dadaba Foundation | Empowering Communities Across Africa</title>
+
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+
+  <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+  <link rel="stylesheet" href="assets/css/themify-icons.css">
+  <link rel="stylesheet" href="assets/css/elegant-line-icons.css">
+  <link rel="stylesheet" href="assets/css/animate.min.css">
+  <link rel="stylesheet" href="assets/css/charitian-icons.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/slick.min.css">
+  <link rel="stylesheet" href="assets/css/slider.css">
+  <link rel="stylesheet" href="assets/css/venobox/venobox.css">
+  <link rel="stylesheet" href="assets/css/odometer.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  <!-- ===== Quick Patches (override theme) ===== -->
+  <style>
+    /* 2× logo in header (appears over hero) */
+    .header-one .header-logo img{
+      max-height:120px; /* ~2× typical 60px */
+      height:auto;
+      width:auto;
+    }
+    @media (max-width: 991px){
+      .header-one .header-logo img{ max-height:96px; }
+    }
+    /* Give header a bit more breathing room for larger logo */
+    .primary-header-one .primary-header-inner{
+      padding-top:12px;
+      padding-bottom:12px;
+    }
+    /* 2× footer logo (only the logo image in widget, not post thumbs) */
+    .widget-section .widget-box > img{
+      max-width:240px;   /* ~2× typical ~120px */
+      height:auto;
+    }
+    /* Optional: ensure hero slider content stays clear of taller header on very small screens */
+    @media (max-width: 575px){
+      #main-slider { scroll-margin-top: 120px; }
+    }
+  </style>
+
+  <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+
+<body class="header-1">
+  <!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please
+      <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</a></p>
+  <![endif]-->
+
+  <div class="site-preloader-wrap"><div class="spinner"></div></div>
+
+  <header class="header header-one">
+    <div class="top-header-one top-bar">
+      <div class="container">
+        <div class="top-bar-inner">
+          <div class="top-left">
+            <ul>
+              <li>Call us: <a href="tel:+233597394288">+233 59 739 4288</a></li>
+              <!-- FIXED: mailto now matches visible email -->
+              <li>Email: <a href="mailto:info@dadabafoundation.com">info@dadabafoundation.com</a></li>
+            </ul>
+          </div>
+          <div class="top-right">
+            <ul class="top-social">
+              <li><a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="#" target="_blank" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a></li>
+              <li><a href="#" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="primary-header-one primary-header">
+      <div class="container">
+        <div class="primary-header-inner">
+          <div class="header-logo">
+            <a href="index.html">
+              <img src="assets/img/logo-dark.png" alt="Dadaba Foundation logo" />
+            </a>
+          </div>
+          <div class="header-menu-wrap">
+            <ul class="dl-menu">
+              <li><a href="index.html">Home</a>
+                <ul>
+                  <li><a href="index.html">Home — Default</a></li>
+                  <li><a href="index-2.html">Home — Fundraising</a></li>
+                </ul>
+              </li>
+              <li><a href="about.html">About</a>
+                <ul>
+                  <li><a href="about.html">Who We Are</a></li>
+                  <li><a href="help.html">Our Approach</a></li>
+                  <li><a href="career.html">Careers</a></li>
+                </ul>
+              </li>
+              <li><a href="events.html">Events</a>
+                <ul>
+                  <li><a href="events.html">Upcoming Events</a></li>
+                  <li><a href="event-details.html">Event Details</a></li>
+                </ul>
+              </li>
+              <li><a href="causes.html">Programs</a>
+                <ul>
+                  <li><a href="causes.html">Our Programs</a></li>
+                  <li><a href="cause-single.html">Program Details</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Pages</a>
+                <ul>
+                  <li><a href="service.html">What We Do</a></li>
+                  <li><a href="gallary.html">Gallery</a></li>
+                  <li><a href="volunteer.html">Volunteer</a></li>
+                  <li><a href="faq.html">Help &amp; FAQs</a></li>
+                  <li><a href="error-404.html">404 Error</a></li>
+                </ul>
+              </li>
+              <li><a href="blog-classic.html">Blog</a>
+                <ul>
+                  <li><a href="blog-classic.html">Blog Classic</a></li>
+                  <li><a href="blog-grid.html">Blog Grid</a></li>
+                  <li><a href="blog-single.html">Blog Details</a></li>
+                </ul>
+              </li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="header-right">
+            <div class="search-icon dl-search-icon" aria-label="Search site"><i class="ti-search"></i></div>
+            <a class="default-btn" href="cause-single.html">Donate Now<span></span></a>
+            <div class="mobile-menu-icon" aria-label="Open menu">
+              <div class="burger-menu">
+                <div class="line-menu line-half first-line"></div>
+                <div class="line-menu"></div>
+                <div class="line-menu line-half last-line"></div>
+              </div>
+            </div>
+          </div>
+        </div><!-- /.primary-header-one-inner -->
+      </div>
+    </div>
+  </header>
+
+  <div id="dl-popup-search-box" aria-hidden="true">
+    <div class="box-inner-wrap d-flex align-items-center">
+      <form id="form" action="#" method="get" role="search" aria-label="Site search">
+        <input id="popup-search" type="text" name="s" placeholder="Type keywords here..." />
+        <button id="popup-search-button" type="submit" name="submit" aria-label="Search"><i class="ti-search"></i></button>
+      </form>
+    </div>
+  </div>
+
+  <!-- HERO / SLIDER -->
+  <div id="main-slider" class="dl-slider">
+    <div class="single-slide">
+      <div class="bg-img kenburns-top-right" style="background-image: url(assets/img/slider-bg-1.jpg);"></div>
+      <div class="overlay"></div>
+      <div class="slider-content-wrap d-flex align-items-center text-left">
+        <div class="container">
+          <div class="slider-content">
+            <div class="dl-caption medium"><div class="inner-layer">
+              <div data-animation="fade-in-bottom" data-delay="1s">Dadaba Foundation</div>
+            </div></div>
+            <div class="dl-caption big"><div class="inner-layer">
+              <div data-animation="fade-in-bottom" data-delay="1.5s">We Turn Giving<br>Into Lasting Change</div>
+            </div></div>
+            <div class="dl-caption small"><div class="inner-layer">
+              <div data-animation="fade-in-bottom" data-delay="2s">Your support powers clean water, education, healthcare, and dignified livelihoods across Ghana and Africa.</div>
+            </div></div>
+            <div class="dl-btn-group"><div class="inner-layer">
+              <a href="cause-single.html" class="default-btn" data-animation="fade-in-bottom" data-delay="2.5s">Donate Now<span></span><i class="arrow_right"></i></a>
+            </div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="single-slide">
+      <div class="bg-img kenburns-top-right" style="background-image: url(assets/img/slider-bg-2.png);"></div>
+      <div class="overlay"></div>
+      <div class="slider-content-wrap d-flex align-items-center text-left">
+        <div class="container">
+          <div class="slider-content">
+            <div class="dl-caption medium"><div class="inner-layer">
+              <div data-animation="fade-in-bottom" data-delay="1s">Impact You Can Measure</div>
+            </div></div>
+            <div class="dl-caption big"><div class="inner-layer">
+              <div data-animation="fade-in-bottom" data-delay="1.5s">From Wells to Classrooms</div>
+            </div></div>
+            <div class="dl-caption small"><div class="inner-layer">
+              <div data-animation="fade-in-bottom" data-delay="2s">We build sustainable projects with local partners for long-term community resilience.</div>
+            </div></div>
+            <div class="dl-btn-group"><div class="inner-layer">
+              <a href="causes.html" class="default-btn" data-animation="fade-in-bottom" data-delay="2.5s">See Programs<span></span><i class="arrow_right"></i></a>
+            </div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="single-slide">
+      <div class="bg-img kenburns-top-right" style="background-image: url(assets/img/slider-bg-3.png);"></div>
+      <div class="overlay"></div>
+      <div class="slider-content-wrap d-flex align-items-center text-left">
+        <div class="container">
+          <div class="slider-content">
+            <div class="dl-caption medium"><div class="inner-layer">
+              <div data-animation="fade-in-bottom" data-delay="1s">Join Our Movement</div>
+            </div></div>
+            <div class="dl-caption big"><div class="inner-layer">
+              <div data-animation="fade-in-bottom" data-delay="1.5s">Partner. Volunteer. Give.</div>
+            </div></div>
+            <div class="dl-caption small"><div class="inner-layer">
+              <div data-animation="fade-in-bottom" data-delay="2s">Be part of a network turning compassion into opportunity for families and youth.</div>
+            </div></div>
+            <div class="dl-btn-group"><div class="inner-layer">
+              <a href="volunteer.html" class="default-btn" data-animation="fade-in-bottom" data-delay="2.5s">Get Involved<span></span><i class="arrow_right"></i></a>
+            </div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- /slider -->
+
+  <!-- ABOUT -->
+  <section class="about-section padding">
+    <div class="container">
+      <div class="about-wrap row d-flex align-items-center">
+        <div class="col-md-6 sm-padding">
+          <div class="section-heading text-left">
+            <span class="sub-heading">About Dadaba Foundation</span>
+            <h2>Together, We Make A Lasting Difference</h2>
+            <p>Dadaba Foundation is the philanthropic arm of Dadaba Group. We empower communities through clean water, education &amp; skills, healthcare access, climate-smart agriculture, and youth employment initiatives. We partner with local leaders so every project is owned, maintained, and measured for impact.</p>
+          </div>
+          <a href="cause-single.html" class="default-btn">Donate Now<span></span></a>
+        </div>
+        <div class="col-md-6 sm-padding">
+          <div class="about-img">
+            <img src="assets/img/about-bg-1.png" alt="Volunteers and community members at a Dadaba Foundation project" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAMS / CAMPAIGNS -->
+  <section class="donate-section padding bg-grey">
+    <div class="container">
+      <div class="section-heading mb-40 text-center">
+        <span class="sub-heading">Current Programs</span>
+        <h2>Your Giving Fuels High-Impact Community Projects</h2>
+        <p>Back a program below to create immediate relief and long-term opportunity.</p>
+      </div>
+      <div class="donate-wrap row">
+        <!-- Project 1 -->
+        <div class="col-lg-4 col-md-6 sm-padding">
+          <div class="donate-box">
+            <div class="donate-img">
+              <img src="assets/img/post-1.jpg" alt="Clean water project" loading="lazy">
+              <div class="donate-btn"><a href="cause-single.html">Donate Now</a></div>
+              <div class="progress">
+                <div class="progress-bar wow slideInLeft" data-wow-delay="0ms" data-wow-duration="2000ms" role="progressbar" style="width: 76%;"><span>76%</span></div>
+              </div>
+            </div>
+            <div class="donate-content">
+              <span>Clean Water</span>
+              <a href="cause-single.html"><h3>Rural Boreholes &amp; WASH Training</h3></a>
+              <p>Drilling boreholes and training water committees so communities maintain safe water for years.</p>
+              <ul class="donate-list">
+                <li><i class="ti-bar-chart"></i>Goal: ₵120,000</li>
+                <li><i class="ti-thumb-up"></i>Raised: ₵91,300</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="col-lg-4 col-md-6 sm-padding">
+          <div class="donate-box">
+            <div class="donate-img">
+              <img src="assets/img/post-2.jpg" alt="Education and skills program" loading="lazy">
+              <div class="donate-btn"><a href="cause-single.html">Donate Now</a></div>
+              <div class="progress">
+                <div class="progress-bar bar-2 wow slideInLeft" data-wow-delay="0ms" data-wow-duration="2000ms" role="progressbar" style="width: 64%;"><span>64%</span></div>
+              </div>
+            </div>
+            <div class="donate-content">
+              <span>Education &amp; Skills</span>
+              <a href="cause-single.html"><h3>Girls in STEM Scholarships</h3></a>
+              <p>Scholarships, mentoring, and devices for talented girls to pursue science, technology, and innovation.</p>
+              <ul class="donate-list">
+                <li><i class="ti-bar-chart"></i>Goal: ₵85,000</li>
+                <li><i class="ti-thumb-up"></i>Raised: ₵54,600</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="col-lg-4 col-md-6 sm-padding">
+          <div class="donate-box">
+            <div class="donate-img">
+              <img src="assets/img/post-3.jpg" alt="Healthcare outreach" loading="lazy">
+              <div class="donate-btn"><a href="cause-single.html">Donate Now</a></div>
+              <div class="progress">
+                <div class="progress-bar bar-3 wow slideInLeft" data-wow-delay="0ms" data-wow-duration="2000ms" role="progressbar" style="width: 52%;"><span>52%</span></div>
+              </div>
+            </div>
+            <div class="donate-content">
+              <span>Healthcare</span>
+              <a href="cause-single.html"><h3>Mobile Clinics &amp; Maternal Health</h3></a>
+              <p>Free community screenings, maternal care, and referrals with local nurses and clinics.</p>
+              <ul class="donate-list">
+                <li><i class="ti-bar-chart"></i>Goal: ₵150,000</li>
+                <li><i class="ti-thumb-up"></i>Raised: ₵78,200</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO -->
+  <section class="video-section bd-bottom">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-md-6 custom">
+          <div class="video-btn text-center">
+            <div class="play-btn">
+              <a href="https://www.youtube.com/watch?v=RQu7jpcNUWI" class="img-popup" data-autoplay="true" data-vbtype="video" aria-label="Play impact video"><i class="fas fa-play"></i></a>
+              <div class="ripple"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 no-padding">
+          <div class="video-wrap">
+            <div class="section-heading mb-40">
+              <span class="sub-heading">Watch Video</span>
+              <h2>Because Access Changes Everything</h2>
+              <p>When a village gets clean water, girls return to school. When youth learn skills, families thrive. Your gift sparks ripple effects for generations.</p>
+            </div>
+            <a href="cause-single.html" class="default-btn">Make a Donation <span></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT WE DO -->
+  <section class="service-section bg-grey padding">
+    <div class="container">
+      <div class="section-heading mb-40 text-center">
+        <span class="sub-heading">What We Do</span>
+        <h2>We Build Resilient Communities With You</h2>
+        <p>Locally led, data-driven programs designed for long-term impact.</p>
+      </div>
+      <div class="service-wrap row">
+        <div class="col-lg-3 col-md-6 sm-padding">
+          <div class="service-box text-center">
+            <span></span>
+            <div class="service-content">
+              <i class="cht cht-charity-1" aria-hidden="true"></i>
+              <h3>Clean Water</h3>
+              <p>Boreholes, filtration, and WASH training for households and schools.</p>
+              <a href="service.html" class="read-more">Read More</a>
+            </div>
+            <div class="service-icon"><i class="cht cht-charity-1"></i></div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 sm-padding">
+          <div class="service-box text-center">
+            <span></span>
+            <div class="service-content">
+              <i class="cht cht-donation-13" aria-hidden="true"></i>
+              <h3>Education &amp; Skills</h3>
+              <p>Scholarships, teacher support, devices, and vocational training for youth.</p>
+              <a href="service.html" class="read-more">Read More</a>
+            </div>
+            <div class="service-icon icon-2"><i class="cht cht-donation-13"></i></div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 sm-padding">
+          <div class="service-box text-center">
+            <span></span>
+            <div class="service-content">
+              <i class="cht cht-charity-6" aria-hidden="true"></i>
+              <h3>Healthcare Access</h3>
+              <p>Mobile clinics, screenings, and referrals with local health services.</p>
+              <a href="service.html" class="read-more">Read More</a>
+            </div>
+            <div class="service-icon icon-3"><i class="cht cht-charity-6"></i></div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 sm-padding">
+          <div class="service-box text-center">
+            <span></span>
+            <div class="service-content">
+              <i class="cht cht-charity-12" aria-hidden="true"></i>
+              <h3>Climate-Smart Agriculture</h3>
+              <p>Seeds, training, and irrigation to boost yields and climate resilience.</p>
+              <a href="service.html" class="read-more">Read More</a>
+            </div>
+            <div class="service-icon icon-4"><i class="cht cht-charity-12"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="team-section padding">
+    <div class="container">
+      <div class="section-heading mb-40 text-center">
+        <span class="sub-heading">Leadership &amp; Volunteers</span>
+        <h2>The People Behind Our Impact</h2>
+        <p>Locally rooted teams and global partners working side by side.</p>
+      </div>
+      <div class="team-wrap row">
+        <div class="col-lg-3 col-md-6 sm-padding">
+          <div class="team-item">
+            <div class="team-thumb">
+              <img src="assets/img/team-img-1.jpg" alt="Leadership member" loading="lazy">
+              <ul class="team-social"></ul>
+            </div>
+            <div class="team-content text-center">
+              <h3>Dr. Nana Kumi Kodie</h3><span>Chairman</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 sm-padding">
+          <div class="team-item">
+            <div class="team-thumb">
+              <img src="assets/img/team-img-2.jpg" alt="Leadership member" loading="lazy">
+              <ul class="team-social"></ul>
+            </div>
+            <div class="team-content text-center">
+              <h3>Jérémie Kodua</h3><span>WASH Specialist</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 sm-padding">
+          <div class="team-item">
+            <div class="team-thumb">
+              <img src="assets/img/team-img-3.jpg" alt="Leadership member" loading="lazy">
+              <!-- FIXED: removed stray closing </ul> that broke markup -->
+            </div>
+            <div class="team-content text-center">
+              <h3>Ana Linda</h3><span>Education &amp; Skills</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 sm-padding">
+          <div class="team-item">
+            <div class="team-thumb">
+              <img src="assets/img/team-img-4.jpg" alt="Leadership member" loading="lazy">
+              <ul class="team-social"></ul>
+            </div>
+            <div class="team-content text-center">
+              <h3>Marcos Garvey</h3><span>Health Programs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA + VOLUNTEER FORM -->
+  <section class="cta-section bd-bottom">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 sm-padding">
+          <div class="cta-content">
+            <div class="section-heading text-left">
+              <span class="sub-heading">Join Us</span>
+              <h2>Because Every Life Matters</h2>
+              <p>Partner with Dadaba Foundation to scale impact. Your expertise, time, or donation can transform a community.</p>
+            </div>
+            <a href="cause-single.html" class="default-btn">Donate Now</a>
+          </div>
+        </div>
+        <div class="col-md-6 sm-padding">
+          <form action="volunteer.php" method="post" id="volunteer-form" class="form-horizontal appointment-form" novalidate>
+            <div class="section-heading">
+              <span>Join Us Now</span>
+              <h3>Become A Volunteer</h3>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-6">
+                <label for="volunteer-form-name" class="sr-only">Name</label>
+                <input type="text" id="volunteer-form-name" name="volunteer-name" class="form-control" placeholder="Your Name" required>
+              </div>
+              <div class="col-sm-6">
+                <label for="volunteer-email" class="sr-only">Email</label>
+                <input type="email" id="volunteer-email" name="volunteer-email" class="form-control" placeholder="Your Email" required>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-6">
+                <label for="volunteer-phone" class="sr-only">Phone</label>
+                <input type="text" id="volunteer-phone" name="volunteer-phone" class="form-control" placeholder="Phone No" required>
+              </div>
+              <div class="col-sm-6">
+                <label for="volunteer-address" class="sr-only">Address</label>
+                <input type="text" id="volunteer-address" name="volunteer-address" class="form-control" placeholder="Your Address" required>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-md-12">
+                <label for="volunteer-message" class="sr-only">Message</label>
+                <textarea id="volunteer-message" name="volunteer-message" cols="30" rows="5" class="form-control message" placeholder="Tell us how you want to help..." required></textarea>
+              </div>
+            </div>
+            <button id="volunteer-submit" class="default-btn" type="submit">Become A Volunteer <span></span></button>
+            <div id="volunteer-form-messages" class="alert" role="alert" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials-section bg-grey padding">
+    <div class="container">
+      <div class="section-heading mb-40 text-center">
+        <span class="sub-heading">Donor &amp; Partner Stories</span>
+        <h2>What People Say</h2>
+        <p>Stories from the community you’re helping and the partners who walk with us.</p>
+      </div>
+      <div class="slider testimonials-carousel nav-style carousel-dots">
+        <div class="testi-item">
+          <div class="testi-content">
+            <p>“Our village’s new borehole means my daughters are back in school. Thank you, Dadaba Foundation.”</p>
+          </div>
+          <div class="testi-info">
+            <img src="assets/img/testi-1.jpg" alt="Community member" loading="lazy">
+            <h3>Adjoa Mensah<span>Community Member</span></h3>
+          </div>
+        </div>
+        <div class="testi-item">
+          <div class="testi-content">
+            <p>“A practical, local-first approach. We’re proud to fund programs we can see and measure.”</p>
+          </div>
+          <div class="testi-info">
+            <img src="assets/img/testi-2.jpg" alt="Donor" loading="lazy">
+            <h3>Michael Owusu<span>Donor</span></h3>
+          </div>
+        </div>
+        <div class="testi-item">
+          <div class="testi-content">
+            <p>“Together we delivered screenings to 1,200 people in one week. Real impact.”</p>
+          </div>
+          <div class="testi-info">
+            <img src="assets/img/testi-3.jpg" alt="Health partner" loading="lazy">
+            <h3>Dr. Ama Boateng<span>Health Partner</span></h3>
+          </div>
+        </div>
+        <div class="testi-item">
+          <div class="testi-content">
+            <p>“The STEM scholarships are changing futures. These girls are leaders in the making.”</p>
+          </div>
+          <div class="testi-info">
+            <img src="assets/img/testi-4.jpg" alt="Education partner" loading="lazy">
+            <h3>Kwesi Asante<span>Education Partner</span></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section class="blog-section padding">
+    <div class="container">
+      <div class="section-heading mb-40 text-center">
+        <span class="sub-heading">Latest Stories</span>
+        <h2>Updates From Our Work</h2>
+        <p>Read impact updates, field notes, and partner highlights from across Ghana and Africa.</p>
+      </div>
+      <div class="blog-wrap row">
+        <div class="col-lg-4 col-md-6 sm-padding">
+          <div class="blog-item">
+            <div class="blog-thumb">
+              <img src="assets/img/post-1.jpg" alt="Borehole project update" loading="lazy">
+              <span class="category"><a href="blog-single.html">Clean Water</a></span>
+            </div>
+            <div class="blog-content">
+              <h3><a href="blog-single.html">Three New Boreholes Completed in Atebubu</a></h3>
+              <p>With community labor and training, 2,800 people now have safe and reliable water access...</p>
+              <a href="blog-single.html" class="read-more">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 sm-padding">
+          <div class="blog-item">
+            <div class="blog-thumb">
+              <img src="assets/img/post-2.jpg" alt="Scholarship awards" loading="lazy">
+              <span class="category"><a href="blog-single.html">Education</a></span>
+            </div>
+            <div class="blog-content">
+              <h3><a href="blog-single.html">20 Girls Awarded STEM Scholarships</a></h3>
+              <p>Laptops, data stipends, and mentorship will support the next generation of innovators...</p>
+              <a href="blog-single.html" class="read-more">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 sm-padding">
+          <div class="blog-item">
+            <div class="blog-thumb">
+              <img src="assets/img/post-3.jpg" alt="Mobile clinic story" loading="lazy">
+              <span class="category"><a href="blog-single.html">Healthcare</a></span>
+            </div>
+            <div class="blog-content">
+              <h3><a href="blog-single.html">Mobile Clinic Reaches Remote Communities</a></h3>
+              <p>Volunteer nurses delivered screenings and referrals to families who live hours from the nearest clinic...</p>
+              <a href="blog-single.html" class="read-more">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUBSCRIBE -->
+  <section class="subscribe-section bd-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+          <div class="subscribe-wrap">
+            <div class="sub-bg"></div>
+            <div class="child"></div>
+            <div class="row align-items-center">
+              <div class="col-md-6">
+                <div class="section-heading">
+                  <h2>Newsletter Subscription</h2>
+                  <p>Get project updates and stories from the field.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="subscribe-form-wrap">
+                  <form action="#" class="subscribe-form">
+                    <label for="subscribe-email" class="sr-only">Email</label>
+                    <input id="subscribe-email" type="email" name="email" class="form-input" placeholder="Enter your email address..." required="">
+                    <input type="hidden" name="action" value="mailchimpsubscribe">
+                    <button class="submit-btn">Subscribe</button>
+                    <div class="clearfix"></div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div><!-- /.subscribe-wrap -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER WIDGETS -->
+  <section class="widget-section padding">
+    <div class="container">
+      <div class="widget-wrap row">
+        <div class="col-lg-3 col-md-6 sm-padding">
+          <div class="widget-box">
+            <img src="assets/img/logo-light.png" alt="Dadaba Foundation logo light">
+            <p>Dadaba Foundation is a non-profit dedicated to creating lasting impact through clean water, free education, healthcare, and climate-smart livelihoods.</p>
+            <ul class="widget-social">
+              <li class="facebook"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li class="instagram"><a href="#"><i class="fab fa-instagram"></i></a></li>
+              <li class="twitter"><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li class="pinterest"><a href="#"><i class="fab fa-pinterest"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 sm-padding">
+          <div class="widget-box">
+            <div class="widget-title"><h3>Latest Posts</h3></div>
+            <ul class="widget-item">
+              <li><a href="#">Atebubu Boreholes Completed</a></li>
+              <li><a href="#">How Scholarships Transform Communities</a></li>
+              <li><a href="#">Partnering for Mobile Health</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 sm-padding">
+          <div class="widget-box pl-50">
+            <div class="widget-title"><h3>About Us</h3></div>
+            <ul class="widget-item">
+              <li><a href="#">Who we are</a></li>
+              <li><a href="#">Our approach</a></li>
+              <li><a href="#">Help &amp; FAQs</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 sm-padding">
+          <div class="widget-box">
+            <div class="widget-title"><h3>Headquarters</h3></div>
+            <ul class="widget-contact">
+              <li><i class="fas fa-map-marker-alt"></i><span>Accra, Ghana</span></li>
+              <li><i class="fas fa-envelope"></i><span>info@dadabafoundation.com</span></li>
+              <li><i class="fas fa-phone"></i><span>(+233) 59 739 4288</span></li>
+              <li><i class="fas fa-clock"></i><span>Mon - Fri: 9:00 - 17:00</span></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-section text-center">
+    <div class="container">
+      <p>© <span id="currentYear"></span> Dadaba Foundation — All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <div id="scrollup"><button id="scroll-top" class="scroll-to-top" aria-label="Back to top"><i class="ti-angle-up"></i></button></div>
+
+  <!-- jQuery Lib -->
+  <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/vendor/popper.min.js"></script>
+  <script src="assets/js/vendor/bootstrap.min.js"></script>
+  <script src="assets/js/vendor/waypoints.min.js"></script>
+  <script src="assets/js/vendor/slick.min.js"></script>
+  <script src="assets/js/vendor/jquery.smoothscroll.min.js"></script>
+  <script src="assets/js/vendor/jquery.ajaxchimp.min.js"></script>
+  <script src="assets/js/vendor/venobox.min.js"></script>
+  <script src="assets/js/vendor/odometer.min.js"></script>
+  <script src="assets/js/vendor/jquery.isotope.v3.0.2.js"></script>
+  <script src="assets/js/vendor/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/js/vendor/wow.min.js"></script>
+  <script src="assets/js/volunteer.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <!-- Fallback: set year if theme script didn't -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){
+      var y = document.getElementById('currentYear');
+      if (y && !y.textContent) y.textContent = new Date().getFullYear();
+    });
+  </script>
+</body>
+</html>
